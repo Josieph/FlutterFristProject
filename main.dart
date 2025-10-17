@@ -39,9 +39,9 @@ class HomePage extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.teal),
               currentAccountPicture: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://i.pravatar.cc/150?img=3"),
+                    "https://avatars.githubusercontent.com/u/88838255?s=400&u=e3699b018b6e6daca3595b697a35737cf7eaed58&v=4"),
               ),
-              accountName: Text("Hello, Agent!"),
+              accountName: Text("Hello, Yousef!"),
               accountEmail: Text("Lexus@luxury.com"),
             ),
 
@@ -116,18 +116,80 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  categoryBox('SUV'),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade100,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(child: Text("SUV")),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade100,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(child: Text("Sedan")),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade100,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(child: Text("HatchPack")),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade100,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(child: Text("Sport")),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade100,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(child: Text("Hybrid")),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade100,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(child: Text("Electric")),
+                  ),
+
+                  // this is my Comment: Yousef , just in case i want to enhance the way of coding for categories
+                  /*categoryBox('SUV'),
                   categoryBox('Sedan'),
                   categoryBox('Hatchpack'),
                   categoryBox('HYBRID'),
                   categoryBox('ELECTRIC'),
-                  categoryBox('Sport'),
+                  categoryBox('Sport'),*/
                 ],
               ),
             ),
 
             SizedBox(height: 10),
 
+            // this is my Comment: Yousef , just in case i want to enhance the way of coding for cards
+/*
+            productCard( 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png', 'Product 1', 'This is a short description of this amazing product.', '\$59.99', ),
+            productCard( 'https://www.lexus.com/content/dam/lexus/images/microsites/suvs/tiles/Lexus-GX-SUV-LEX-GXG-MY24-0072-555x400.jpg', ),
+            productCard( 'https://images.unsplash.com/photo-1519681393784-d120267933ba', 'Product 3', 'This is a short description of this amazing product.', '\$59.99', ),
+*/
 
             Column(
               children: [
@@ -307,7 +369,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget categoryBox(String name) {
+  /*Widget categoryBox(String name) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 6),
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -375,5 +437,5 @@ class HomePage extends StatelessWidget {
         ],
       ),
     );
-  }
+  }*/
 }
